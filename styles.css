@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hook {
+  font-family: "Poiret One", sans-serif;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  font-family: "Poiret One", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 150%;
+  background-color: #002e05;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+.info-images {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+/* Homepage CSS */
+/*TOP*/
+#top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 10% 5%;
+  background-image: url("./assets/HomepageTOP.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#top-heading {
+  font-size: 75px;
+  font-family: "Poiret One", sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 100%;
+}
+#top-p {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  text-align: center;
+}
+
+/*Facts Section*/
+#Homepage-Facts-heading {
+  font-size: 60px;
+  font-family: "Poiret One", sans-serif;
+  display: flex;
+  padding-left: 5%;
+}
+#Homepage-Facts-belowHeading {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#Homepage-Facts-list {
+  font-family: "Quicksand", sans-serif;
+  font: 30px;
+  width: 50%;
+  align-items: center;
+}
+#Homepage-Facts-img {
+  width: 25%;
+  object-fit: cover;
+  align-items: center;
+}
+
+/*below, more navigation*/
+/* Shared styles for layout */
+.below-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 30px 5%;
+  gap: 20px;
+  min-height: 300px;
+  font-family: "Poiret One", sans-serif;
+}
+
+.below-nav h2 {
+  flex: 1;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  font-size: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.below-nav h2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.below-nav h2 span {
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.below-nav div {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+.below-nav div p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Section-specific backgrounds */
+.section-1 h2 {
+  background-image: url("https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg");
+}
+
+.section-1 div {
+  background-color: #00141c;
+  color: white;
+}
+
+.section-1 a {
+  color: white;
+}
+
+.section-2 h2 {
+  background-image: url("assets/interactive-banner.jpg");
+}
+
+.section-2 div {
+  background-color: #7cba95;
+  color: black;
+}
+
+.section-2 a {
+  color: black;
+}
+
+.section-3 h2 {
+  background-image: url("https://images.pexels.com/photos/2787469/pexels-photo-2787469.jpeg");
+}
+
+.section-3 div {
+  background-color: #84d6ffc9;
+}
+
+.section-3 a {
+  color: black;
+}
+
+.section-4 h2 {
+  background-image: url("assets/about-banner.jpg");
+}
+
+.section-4 div {
+  background-color: #fde68a;
+}
+
+.section-4 a {
+  color: black;
+}

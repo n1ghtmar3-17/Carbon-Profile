@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <!---start-->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>HTML + CSS</title>
+   <script src="interactive.mjs"></script>
+   <link rel="stylesheet" href="styles-interactive.css" />
+   <!--Poiret One-->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+     rel="stylesheet"
+   />
+   <!--Quicksand-->
+   <link
+     href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+     rel="stylesheet"
+   />
+   <title>Interactive</title>
+   <link rel="stylesheet" href="styles.css" />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Michroma&family=Poiret+One&family=Quicksand&display=swap"
+     rel="stylesheet"
+   />
+   <title>Interactive</title>
+ </head>
+ <body>
+   <nav>
+     <a href="index.html" class = 'nav-link'>Home</a>
+     <a href="info.html" class = 'nav-link'>Information</a>
+     <a href="interactive.html" class = 'nav-link'>Interactive</a>
+     <a href="sources.html" class="nav-link">More Links</a>
+     <a href="about.html" class = 'nav-link'>About Us</a>
+   </nav>
+   <!--banner-->
+   <div class="banner">
+     <img src="./assets/interactive-banner.jpg" alt="Carbon Awareness Banner" />
+     <div class="banner-text">
+       How much carbon are you really emitting every day?
+     </div>
+   </div>
+   <main>
+     <h1 class="poiret-heading">What’s Your Carbon Footprint?</h1>
+     <!--Car Travel-->
+     <section>
+       <h3>Car Travel</h3>
+       <label>How many miles did you drive?</label>
+       <input
+       type="number"
+       id="car-miles"
+       name="people"
+       placeholder="Enter a number"
+     />
+       <br>
+       <label>Select your car fuel type:</label>
+       <select id = "car-type" name="car-type">
+         <option value="gasoline">gasoline</option>
+         <option value="diesel">Diesel</option>
+         <option value="hybrid">Hybrid</option>
+         <option value="other">Other</option>
+       </select>
+     </section>
+     <!--Airplane-->
+     <section>
+       <h3>Airplane</h3>
+       <label>How many miles did you fly?</label>
+       <input
+       type="number"
+       id="airplane-miles"
+       name="people"
+       placeholder="Enter a number"
+     />
+     </section>
+     <!--Public Transportation-->
+     <section>
+       <h3>Public Transportation</h3>
+       <label>How many miles did you travel?</label>
+       <input
+       type="number"
+       id="public-miles"
+       name="people"
+       min="1"
+       placeholder="Enter a number"
+     />
+       <br>
+       <label>Choose transport type:</label>
+       <select id="public-type">
+         <option value="243">City Bus</option>
+         <option value="160">Subway / Metro</option>
+         <option value="150">Other / Multiple</option>
+       </select>
+     </section>
+     <!--Motorbike-->
+     <section>
+       <h3>Motorbike</h3>
+       <label>How many miles did you ride?</label>
+       <input
+       type="number"
+       id="motorbike-miles"
+       name="people"
+       placeholder="Enter a number"
+     />
+     </section>
+     <!--Walking/Biking-->
+     <section>
+       <h3>Walking or Biking</h3>
+       <label>How many miles did you walk?</label>
+       <input
+       type="number"
+       id="walk-miles"
+       name="people"
+       placeholder="Enter a number"
+     />
+     <label>How many miles did you bike?</label>
+       <input
+       type="number"
+       id="bike-miles"
+       name="people"
+       placeholder="Enter a number"
+     />
+     </section>
+     <!--Housing-->
+     <section class="housing-section">
+       <h2>Housing Emissions</h2>
+
+
+       <form id="housing-form">
+         <!-- Type of House -->
+         <section>
+         <label for="house-type">What type of house do you live in?</label>
+         <select id="house-type" name="house-type">
+           <option value="1">Freestanding, no running water</option>
+           <option value="6">Freestanding, with water</option>
+           <option value="4.5">Duplex / Row house</option>
+           <option value="3">Multistory Apartment</option>
+           <option value="8.5">Luxury Condominium</option>
+         </select>
+  
+
+
+         <!-- Heating -->
+         <br>
+         <label for="heating-type">What kind of heating do you use?</label>
+         <select id="heating-type" name="heating-type">
+           <option value="1.5">Electric (grid mix)</option>
+           <option value="2.5">Natural Gas</option>
+           <option value="4">Heating Oil</option>
+           <option value="1.5">Wood Stove</option>
+           <option value="1">Heat Pump</option>
+         </select>
+
+
+         <!-- Electricity Source -->
+         <br>
+         <label for="electricity-type"
+           >What’s your main electricity source?</label
+         >
+         <select id="electricity-type" name="electricity-type">
+           <option value="5">Fossil fuels (coal/gas heavy)</option>
+           <option value="3.25">Mixed (grid average)</option>
+           <option value="1">Mostly renewable (solar/wind)</option>
+           <option value="0.3">Off-grid solar</option>
+         </select>
+
+
+         <!-- Number of People -->
+         <section>
+         <label for="people">How many people live in your household?</label>
+         <input
+           type="number"
+           id="people"
+           name="people"
+           min="1"
+           placeholder="Enter a number"
+         />
+       </section>
+
+
+   <!--Food-->
+   <section class="food-section">
+     <h2>Food Emissions</h2>
+    
+     <form id="food-form">
+       <!-- Meat Frequency -->
+       <section>
+       <label for="meat-frequency">How often do you eat meat?</label>
+       <select id="meat-frequency" name="meat-frequency">
+         <option value="10">Never (vegetarian/vegan)</option>
+         <option value="17">Sometimes (few times/week)</option>
+         <option value="23.5">Often (daily)</option>
+         <option value="32.5">Extremely Often (every meal)</option>
+       </select>
+  
+       <!-- Dairy -->
+       <br>
+       <label for="dairy-level">How much dairy do you consume?</label>
+       <select id="dairy-level" name="dairy-level">
+         <option value="0">None (vegan)</option>
+         <option value="2.5">Low (few times a week)</option>
+         <option value="4.5">Moderate (daily)</option>
+         <option value="6.5">High (cheese-heavy/lattes)</option>
+       </select>
+
+
+      
+       <!-- Eggs -->
+       <br>
+       <label for="egg-level">How many eggs do you eat?</label>
+       <select id="egg-level" name="egg-level">
+         <option value="0">None</option>
+         <option value="0.4">Low (1–2 eggs/week)</option>
+         <option value="0.9">Moderate (4–6 eggs/week)</option>
+         <option value="1.75">High (daily)</option>
+       </select>
+     </section>
+  
+     <!--Calculating button-->
+     <section>
+       <button id = "calc-button">Calculate My Emissions</button>
+     </section>
+     <!--Result-->
+     <section id='totalresult'>
+       <h2>Your Estimated CO2 Emissions</h2>
+       <p id="result">[Click the button above to see your result]</p>
+       <div id="result-compare"></div>
+       <div id="result-dis">
+       </div>
+     </section>
+   </main>
+   <footer>
+     <a href="reduce.html">HOW TO REDUCE CARBON FOOTPRINT</a>
+   </footer>
+ </body>
+</html>

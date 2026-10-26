@@ -1,0 +1,155 @@
+/* general 300px = 15% */
+* {
+  margin: 0;
+}
+p,
+button,
+a {
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-family: "Poiret One";
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 150%;
+  background-color: #002e05;
+}
+.nav-link {
+  color: white;
+}
+/* info page */
+#learn-more {
+  text-align: center;
+  font-size: 4em;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  background-position: center;
+  background-image: url("https://images.pexels.com/photos/620337/pexels-photo-620337.jpeg");
+  /* Source: Tobi */
+}
+body {
+  background-color: #87b2c9;
+}
+p:not(#information p) {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+#info-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 3%;
+}
+button {
+  padding: 0.5%;
+  font-size: 150%;
+  width: 6em;
+}
+p {
+  font-size: 150%;
+}
+img {
+  width: 30%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 5%;
+}
+#information section {
+  display: flex;
+}
+/* ocean spec */
+#ocean-hook {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-right: 9%;
+  padding-left: 9%;
+  text-align: center;
+  font-size: 2.5em;
+  background-image: url("https://images.pexels.com/photos/1350197/pexels-photo-1350197.jpeg");
+  /* Source: Emiliano Arano */
+  background-position: top;
+  background-repeat: no-repeat;
+}
+/* land spec */
+#land-hook {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-right: 9%;
+  padding-left: 9%;
+  text-align: center;
+  font-size: 2.5em;
+  background-image: url("https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg");
+  /* Source: Markus Spiske */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* air spec */
+#air-hook {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-right: 9%;
+  padding-left: 9%;
+  text-align: center;
+  font-size: 2.5em;
+  background-image: url("https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg");
+  /* Source: Pixabay */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.topic-info {
+  flex-direction: column;
+  padding: 7%;
+}
+.topic-info h2 {
+  font-size: 2em;
+}
+#ocean-warming,
+#heatwave,
+#human-effects,
+#natural-disasters,
+#human-effects-2,
+#biodiversity,
+#ozone-pollution,
+#human-effects-3 {
+  text-align: right;
+  align-items: center;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+#sea-ice,
+#acidification,
+#land-productivity,
+#permafrost,
+#wildfire-smoke {
+  flex-direction: row-reverse;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+#extra-links h2 {
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 1%;
+  font-size: 2em;
+}
+#extra-links ul {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 150%;
+  padding-bottom: 5%;
+}
+#extra-links li {
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}

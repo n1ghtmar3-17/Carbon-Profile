@@ -1,0 +1,129 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+/*interactive banner*/
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Poiret One", sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 20px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+/*interactive caculator*/
+
+.poiret-heading {
+  font-family: "Poiret One", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  font-family: "Poiret One", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 150%;
+  background-color: #002e05;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+input[type="number"],
+select {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  background-color: #57cf06;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1f7a04;
+}
+/*Result box */
+#result {
+  font-size: 1.2em;
+  color: #1e272e;
+  background-color: #daf1ce;
+  padding: 15px;
+  border-left: 5px solid #124901;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+section {
+  margin-bottom: 30px;
+}
+footer {
+  text-align: center;
+  background-color: #ccc;
+  padding: 1em;
+  margin-top: 40px;
+}
